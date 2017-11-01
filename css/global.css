@@ -110,6 +110,8 @@ footer .kontakt .name {
    forbliver den i toppen*/
   header {
     position: fixed;
+    top: 0;
+    z-index: 999;
   }
   /*stylling for infoboks*/
   .infoboks {
@@ -139,7 +141,8 @@ footer .kontakt .name {
     position: fixed;
   	width: 100%;
   	height: auto;
-    margin-top: 20px;
+    background: white;
+    top: 31px;
   }
 
   svg {
@@ -154,6 +157,7 @@ footer .kontakt .name {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
+    clear: both;
   }
   .desktopnav a {
     float: left;
