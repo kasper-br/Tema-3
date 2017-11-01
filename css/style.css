@@ -1,6 +1,9 @@
+/* wrapper */
 main {
   margin-top: 150px;
 }
+
+/* Topbillede */
 
 .front .header {
   background-repeat: no-repeat;
@@ -34,6 +37,8 @@ main {
   font-size: 70px;
 }
 
+
+/* Sub elementer */
 article {
   max-width: 1200px;
   width: 100%;
@@ -67,6 +72,7 @@ figure:after {
   background: rgba(0,0,0,0.5);
 }
 
+/* Specific style for subelementer */
 figure.one {
   background-image: url('../img/block1.jpg');
   margin-bottom: 3%;
@@ -87,7 +93,7 @@ figure.four {
   margin-bottom: 3%;
 }
 
-
+/* Text on subelementer */
 
 .text-wrapper {
   position: absolute;
@@ -114,7 +120,7 @@ figure.four {
 }
 
 
-
+/* Desktop style */
 @media screen and (min-width: 768px) {
 
   figure.one {
