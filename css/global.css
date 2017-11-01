@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Styling for body*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/*viser ikke infoboks på mobil*/
+.infoboks {
+  display: none;
+}
+/*styling af logo*/
+.logo {
+  position: fixed;
+	width: 100%;
+	height: auto;
+  padding: 20px;
+}
+
+svg {
+	width: 20%;
+	height: auto;
+}
+/*viser ikke desktop menu på mobil*/
+.desktopnav {
+  display: none;
+}
+/*Stylling for burgermenu-icon*/
+.menuopen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  font-weight: thin;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+/*Styling for side navigation menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #DBF3C8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*Styling for side navigation menu links*/
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+/*This show what side you are on in the nav bar*/
+.sidenav a.active {
+  font-weight: bold;
+  color: 000;
+}
+/*Position and styling for the close button (top right corner)*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+/*styling for footer*/
+footer {
+  position: absolute;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+}
+/*footer logo og kontakt info styling*/
+footer .logo {
+  position: absolute;
+}
+footer .kontakt {
+  position: absolute;
+  text-align: center;
+  font-weight: thin;
+  width: 100%;
+  margin-top: 60px;
+}
+footer .kontakt .name {
+  font-size: 15px;
+  font-weight: bold;
+}
+/*socialmedia-icon styling*/
+.socialicon img{
+  padding: 5px;
+  width: 40px;
+  height: auto;
+}
+/*styling for desktop*/
+@media screen and (min-width: 500px) {
+  /*Sætter header til fixed, så når man scroller
+   forbliver den i toppen*/
+  header {
+    position: fixed;
+  }
+  /*stylling for infoboks*/
+  .infoboks {
+    display: block;
+    position: fixed;
+    padding: 10px;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-size: 10px;
+    top: 0;
+  }
+
+  .infoboks a {
+    display: inline;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  /*viser ikke burgermenu på desktop*/
+  .menuopen {
+    display: none;
+  }
+  /*stylling for logo på desktop*/
+  .logo {
+    position: fixed;
+  	width: 100%;
+  	height: auto;
+    margin-top: 20px;
+  }
+
+  svg {
+  	width: 10%;
+  	height: auto;
+  }
+  /*stylling for menu for desktop*/
+  .desktopnav {
+    position: fixed;
+    display: inline-block;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  .desktopnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .desktopnav a.active {
+    text-decoration: underline;
+  }
+  /*stylling for footer på desktop*/
+  footer {
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+  }
+  footer svg {
+    display: none;
+  }
+  footer .kontakt {
+    position: absolute;
+    text-align: center;
+    font-weight: thin;
+    width: 100%;
+    margin-top: 60px;
+  }
+  footer .kontakt .name {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .socialicon img{
+    padding: 5px;
+    width: 40px;
+    height: auto;
+  }
+}
