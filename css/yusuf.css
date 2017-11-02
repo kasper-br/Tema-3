@@ -1,0 +1,80 @@
+main {
+  margin-top: 120px;
+}
+
+.topbillde {
+  background-image: url('../img/blue1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 60vh;
+}
+
+.picright{
+  float: right;
+  margin-left: 20px;
+}
+
+.picleft{
+float: left;
+margin: :20px;
+}
+img { width: 100%; height: auto; }
+article {
+  max-width: 1000px;
+  width: 100%;
+  margin: 15px auto;
+  overflow: auto;
+  clear: both;
+}
+
+aside,section {
+      margin: 15px;
+}
+.info {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.price {
+  margin-top: 30px;
+  font-size: 60px;
+}
+.cart {
+  background: black;
+  color: white;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 640px) {
+
+  aside,section {
+    margin: 0;
+  }
+
+  figure, section {
+    width: 65%;
+    margin-right: 5%;
+    float: left;
+  }
+
+  aside {
+    width: 30%;
+    float: left;
+  }
+
+  article {
+    margin: 60px auto;
+    overflow: auto;
+    clear: both;
+  }
+
+}

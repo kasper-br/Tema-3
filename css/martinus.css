@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Styling for body*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+position: fixed;
+top: 0;
+z-index: 999;
+}
+/*viser ikke infoboks på mobil*/
+.infoboks {
+  display: none;
+}
+/*styling af logo*/
+.logo {
+  position: fixed;
+  background-color: white;
+	width: 100%;
+	height: auto;
+  padding: 20px;
+}
+
+svg {
+	width: 20%;
+	height: auto;
+}
+/*viser ikke desktop menu på mobil*/
+.desktopnav {
+  display: none;
+}
+/*Stylling for burgermenu-icon*/
+.menuopen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  font-weight: thin;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+/*Styling for side navigation menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*Styling for side navigation menu links*/
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+/*This show what side you are on in the nav bar*/
+.sidenav a.active {
+  font-weight: bold;
+  color: #fff;
+}
+/*Position and styling for the close button (top right corner)*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+/*styling for content*/
+/*styling for banner*/
+.content .banner {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+.wrap {
+  clear: both;
+}
+/*Styling for produkt img*/
+.content .produktimg {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+.content .produktimg2 {
+  display: none;
+}
+article {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+article h1 {
+  margin-bottom: 20px;
+}
+article h2 {
+  margin-top: 20px;
+}
+
+.buybutton a {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.info {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+}
+.produktimg3 {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+/*styling for footer*/
+footer {
+  clear: both;
+  position: relative;
+  display: block;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 12px;
+  height: 10px;
+  width: 100%;
+}
+/*footer logo og kontakt info styling*/
+footer .logo {
+  position: absolute;
+}
+footer .kontakt {
+  position: absolute;
+  text-align: center;
+  font-weight: 100;
+  width: 100%;
+  margin-top: 60px;
+}
+footer .kontakt .name {
+  font-size: 15px;
+  font-weight: bold;
+}
+/*socialmedia-icon styling*/
+.socialicon img{
+  padding: 5px;
+  width: 40px;
+  height: auto;
+}
+/*styling for desktop*/
+@media screen and (min-width: 500px) {
+  /*Sætter header til fixed, så når man scroller
+   forbliver den i toppen*/
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+  /*stylling for infoboks*/
+  .infoboks {
+    z-index: 2;
+    display: block;
+    position: fixed;
+    padding: 10px;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-size: 10px;
+    top: 0;
+  }
+
+  .infoboks a {
+    display: inline;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  /*viser ikke burgermenu på desktop*/
+  .menuopen {
+    display: none;
+  }
+  /*stylling for logo på desktop*/
+  .logo {
+    position: fixed;
+    background-color: white;
+  	width: 100%;
+  	height: auto;
+    margin-top: 20px;
+  }
+
+  svg {
+  	width: 10%;
+  	height: auto;
+  }
+  /*stylling for menu for desktop*/
+  .desktopnav {
+    position: fixed;
+    display: inline-block;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  .desktopnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .desktopnav a.active {
+    text-decoration: underline;
+  }
+  /*styling for content*/
+  /*styling for banner*/
+  .content .banner {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin-top: 120px;
+  }
+  /*Styling for produkt img*/
+  .content .produktimg {
+    display: none;
+  }
+  .content .produktimg2 {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 60px;
+    float: left;
+  }
+  article {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+    margin-left: 5%;
+  }
+  article h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  article h2 {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .buybutton a {
+    float: right;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 5%;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .wrap {
+    margin-top: 50px;
+  }
+  .info {
+    position: relative;
+    display: block;
+    margin-left: 5%;
+    width: 60%;
+    float: left;
+  }
+  .produktimg3 {
+    position: relative;
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 5%;
+    float: right;
+  }
+  /*stylling for footer på desktop*/
+  footer {
+    clear: both;
+    position: relative;
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 12px;
+    height: 10px;
+    width: 100%;
+  }
+  footer svg {
+    display: none;
+  }
+  footer .kontakt {
+    position: absolute;
+    text-align: center;
+    font-weight: thin;
+    width: 100%;
+  }
+  footer .kontakt .name {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .socialicon img{
+    padding: 5px;
+    width: 40px;
+    height: auto;
+  }
+}

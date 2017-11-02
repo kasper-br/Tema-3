@@ -1,0 +1,107 @@
+main {
+    margin-top: 50px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+}
+.topbillede {
+  background-image: url('../img/plante2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  position: relative;
+}
+
+.topbillede h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h2 {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 15px;
+  font-weight: normal;
+    line-height: 30px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+article {
+  max-width: 950px;
+  width: 90%;
+  padding: 30px;
+}
+
+section {
+
+}
+aside {
+margin-left: 7%;
+text-align: center;
+}
+aside h3 {
+  margin-top: 20%;
+  margin-bottom: 15px;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li {
+  margin-bottom: 5px;
+}
+
+aside ul li.phone {
+  margin-top: 15px;
+}
+
+
+@media screen and (min-width: 640px) {
+
+  main {
+      margin-top: 125px;
+  }
+  article {
+    clear: both;
+    overflow: auto;
+    margin: 60px auto;
+  }
+
+  section {
+    width: 65%;
+    float: left;
+    margin-right: 0%;
+  }
+  aside {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    }
+    aside h3 {
+      margin-top: 0%;
+      margin-bottom: 15px;
+    }
+  }
