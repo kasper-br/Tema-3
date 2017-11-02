@@ -7,6 +7,11 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+header {
+position: fixed;
+top: 0;
+z-index: 999;
+}
 /*viser ikke infoboks på mobil*/
 .infoboks {
   display: none;
@@ -14,6 +19,7 @@ body {
 /*styling af logo*/
 .logo {
   position: fixed;
+  background-color: white;
 	width: 100%;
 	height: auto;
   padding: 20px;
@@ -173,10 +179,13 @@ footer .kontakt .name {
   }
   /*stylling for footer på desktop*/
   footer {
-    position: absolute;
-    margin-top: 100px;
+    clear: both;
+    position: relative;
+    display: block;
+    margin-top: -10px;
     text-align: center;
     font-size: 12px;
+    height: 10px;
     width: 100%;
   }
   footer svg {
@@ -185,9 +194,8 @@ footer .kontakt .name {
   footer .kontakt {
     position: absolute;
     text-align: center;
-    font-weight: thin;
+    font-weight: 100;
     width: 100%;
-    margin-top: 60px;
   }
   footer .kontakt .name {
     font-size: 15px;
